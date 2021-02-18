@@ -36,8 +36,8 @@ Cypress.Commands.add('wyloguj', () => {
 
 Cypress.Commands.add('macs', (model) => {
     cy.get(".chapternav-items").contains(model).click()
-    cy.wait(3000)
-    cy.scrollTo("bottom", {duration:10000})
+    cy.wait(1000)
+    cy.scrollTo("bottom", {duration:1000})
     cy.go('back')
 })
 

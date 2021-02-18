@@ -4,7 +4,7 @@ let log = console.log;
 
 describe('', () => {
 
-    it('Login', () => {
+    it('Choose MacBook', () => {
         cy.visit('https://www.apple.com/')
         
         cy.get("a").contains("Mac").click({force:true}) 
@@ -14,10 +14,16 @@ describe('', () => {
         cy.macs("MacBook Pro 16")
         cy.macs("iMac")
         cy.macs("iMac Pro")
-        cy.macs("MacBook Air")
-        cy.macs("MacBook Air")
-        cy.macs("MacBook Air")
-        cy.macs("MacBook Air")
+        cy.macs("Mac Pro")
+        cy.macs("Mac mini")
+        cy.macs("Compare")
+        cy.macs("Pro Display XDR")
+        
+
+        cy.get(".chapternav-items").contains("MacBook Pro 16").click()
+        cy.get(".ac-ln-menu-link").contains("Tech Specs").click()
+        cy.scrollTo("bottom", {duration:1000})
+        cy.scrollTo("top", {duration:1000})
         // cy.get("#nav-hamburger-menu").click()
         // cy.get(".hmenu-item").contains("Sign In").click()
 
