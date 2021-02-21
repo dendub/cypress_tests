@@ -14,6 +14,9 @@ describe("", ()=> {
     it("Get all of the branches of the cypress_tests repo", () => {
         cy.request("https://api.github.com/repos/dendub/cypress_tests/branches").then((response) => {
             expect(response).to.have.property('status', 200)
+            expect(response).to.have.property('status', 200)
+
         })
+
     })
 })
