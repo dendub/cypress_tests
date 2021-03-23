@@ -4,7 +4,7 @@ describe('Booking gym', function(){
         cy.get('.btn-primary').click()
         cy.contains('więcej informacji').click()
         cy.get('input[label="imię"]').type("denys") 
-        cy.get('input[label="nazwisko"]').type("dubovskyy") 
+        cy.get('input[label="nazwisko"]').type("dubovskyy")
         cy.get('input[label="Email"]').type("dubovskyy@gmail.com") 
         cy.get('input[label="Telefon"]').type("733937083") 
         cy.get('.booking-button').click()

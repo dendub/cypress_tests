@@ -6,7 +6,7 @@ describe('Login', function(){
         cy.contains('Zarejestruj się').click()
         cy.get('input[id="firstName"]').type("denys")
         cy.get('input[id="surname"]').type("dubovskyy")
-        cy.get('input[id="email"]').type("egxy99111@gmail.com")
+        cy.get('input[id="email"]').type("egxy991111@gmail.com")
         cy.get('input[id="number"]').type("733937083")
         cy.get('input[id="password"]').type("12345678")
         cy.contains('Zarejestruj').click()

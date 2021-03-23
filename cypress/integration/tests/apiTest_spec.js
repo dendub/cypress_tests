@@ -19,7 +19,7 @@ describe('API test', () => {
     })
 
     it('Put - update', () => {
-        const emp = {"name": "denys"}
+        const emp = {"employee_name": "denys"}
         cy.request('PUT', '/update/2', emp)
 
     })
